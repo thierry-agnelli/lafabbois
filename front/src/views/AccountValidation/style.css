@@ -1,0 +1,7 @@
+#mailValidationContainer{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

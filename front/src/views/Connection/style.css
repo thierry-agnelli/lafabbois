@@ -1,0 +1,99 @@
+#connectionMainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+#connectionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+#connectionContainer form{
+    padding-top: 1em;
+}
+
+/* Titres */
+.connectionTitle{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* Formulaire */
+.connectionInputContainer{
+    margin: 0.5em;
+    width: 15vw;
+    min-width: 15em;
+    max-width: 25em;
+}
+
+.connectionInputContainer input{  
+    width: 100%;
+    height: 2em;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#connectionInputPwdContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#forgottenPwd{
+    font-size: 0.65em;
+    font-style: italic;
+    transition: color 0.25s; 
+}
+#forgottenPwd:hover{
+    color: #808080;
+    transition: color 0.25s; 
+}
+
+/* Bouton de connexion*/
+#connexionBtn{
+    width: 60%;
+    font-size: 1em;
+    border-radius: 4px;
+    margin: 1em;
+    padding: 0.5em;
+    align-self: center;
+    background-color: white;
+    text-align: center;
+    border: 2px solid #E20024;
+    text-decoration:none;
+    text-align: center;
+}
+
+#connexionBtn:hover{
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #E20024;
+    color: white;
+}
+
+
+/* Pas encore inscit */
+#notRegisteredBtn{
+    transition: color 0.25s;
+}
+
+#notRegisteredBtn:hover{
+    color: #808080;
+    transition: color 0.25s;
+}
+
+
+/* Erreur de connexion */
+.connectionFormError{
+    background-color: #F4D7D7;
+}
+
+.connectionError{
+    color: red;
+    height: 1em;
+}
+

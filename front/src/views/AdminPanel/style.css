@@ -1,0 +1,247 @@
+#accessDenied
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#newPictureContainer{
+    margin: 1em;
+}
+
+#addPictureForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#pictureFormSubContainer{
+    display: flex;
+}
+
+#pictureFormCategoryInput{
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#picPreview{
+    width: 350px;
+    height: 350px;
+    margin: 0.5em 0;
+    border: 3px ridge #707070;
+    background-color: #DDDDDD;
+}
+
+#adminPanel
+{
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+    word-break: break-word;
+}
+
+#adminPanel ul
+{
+    list-style-type: circle;
+}
+
+#adminPanel .section
+{
+    box-shadow: inset 0 0 10px #1E2962;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#adminPanel select
+{
+    /* No arrow (Firefox) */
+    -moz-appearance: none;
+    /* No arrow (Chrome) */
+    -webkit-appearance: none;
+}
+
+#adminPanel select::-ms-expand
+{
+    /* No arrow (IE10) */
+    display: none;
+}
+
+#stats, #products, #members
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#stats h2, #products h2
+{
+    text-decoration: line-through;
+    filter: drop-shadow(0 0 0.75rem #E20124);
+}
+
+#orders
+{
+    padding-top: 5px;
+}
+
+.divOrder, .divMember
+{
+    border: #E20124 dashed 4px;
+    margin: 2rem;
+    box-shadow: #1E2962 4px 4px 8px, #1E2962 -4px -4px 8px;
+    border-radius: 5px;
+    max-width: 495px;
+}
+
+.divOrderBody, .divMemberBody
+{
+    padding: 1rem;
+}
+
+.divOrderBody .title, .divMemberBody .title
+{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.divOrderBody .sameShipping
+{
+    color: #1E2962;
+    font-weight: bold;
+}
+
+h1, h2, #adminPanel strong
+{
+    color: #1E2962;
+}
+
+#adminPanel h3, #adminPanel strong
+{
+    text-shadow: 1px 1px 2px #1E2962;
+}
+
+#adminPanel h3
+{
+    margin: 0px;
+    background-color: #1E2962;
+    color: #FFF;
+    padding: 20px;
+}
+
+.divOrderStatus
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divOrderStatusBtn
+{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 33px;
+}
+
+#adminPanel .button[title="Annuler la commande"]
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1, h2, .refresh, #noMember, #noOrder, #listStatus
+{
+    display: flex;
+    justify-content: center;
+}
+
+#noOrder
+{
+    padding-bottom: 25px;
+}
+
+#adminPanel .button, .divOrder h3, .productsTitleP, select, .divMember h3, .cursor
+{
+    cursor: pointer;
+}
+
+#adminPanel .button, #adminPanel select, #adminPanel input[type="text"]
+{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#adminPanel select, #adminPanel input[type="text"]
+{
+    background-color: #1E2962;
+    color: #FFF;
+}
+
+#adminPanel optgroup
+{
+    color: #E20124;
+}
+
+#adminPanel option, #adminPanel ::placeholder
+{
+    color: #FFF;
+}
+
+#filters, #search
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchEmail
+{
+    margin-right: 8px;
+}
+
+#divOrders, #divMembers
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.divIndividualProduct p strong
+{
+    background-color: #FFF;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.divIndividualProduct p
+{
+    text-align: right;
+}
+
+.divIndividualProduct, .emptyCart
+{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    background-color: #1E2962;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.emptyCart
+{
+    padding-top: 5px;
+    text-align: center;
+}
+
+.productsTitleP
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productsTitle
+{
+    margin: 5px 5px;
+}

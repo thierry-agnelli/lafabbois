@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap');
+@font-face
+{
+    font-family: "Berlin"; /* used line 17 */
+    src: url("./assets/fonts/berlin.ttf") format("ttf");
+}
+
+@font-face
+{
+    font-family: "Averta"; /* used line 110 */
+    src: url("./assets/fonts/averta.ttf") format("ttf");
+}
+
+/* Scrollbar de la page */
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #141426;
+}
+
+::-webkit-scrollbar-track
+{
+	box-shadow: inset 2px 2px 3px #141426, inset -2px -2px 3px #141426;
+	background-color: #9198E5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #1E2962;
+	border-radius: 10px;
+	box-shadow: inset 2px 2px 3px #DCDCDC;
+}
+/* Fin du style de la scrollbar */
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Berlin", sans-serif;
+}
+
+#root
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* removes the default style on <a> tags */
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+applies column flex on its two
+children: headerTopRow, headerBottomRow
+*/
+header
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* only centers logo */
+.headerTopRow
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.headerLogo
+{
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    width: 680px;
+}
+
+/* sets the login and shopping cart buttons in the top right corner of the toprow div */
+.loginAndCart
+{
+    position: absolute;
+    top: 2.2rem;
+    right: 6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 11rem;
+}
+
+/* removes basic button style */
+.Btn
+{
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+/* aligns the user icon and "connexion" text */
+.signInBtn
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.pLogin
+{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Style de la partie connecté */
+#headerUserContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.3em;;
+}
+
+.headerUserName{
+    font-size: 1em;
+}
+
+.signOutBtn
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.pUnLogin{
+    font-size: 0.85em;
+    margin: 0;
+}
+
+/* so the admin icon (with the shield) is not pressed against the user icon (with the cog) */
+#adminIcon
+{
+    margin-right: 5px;
+}
+
+/* this is to make socialMediaBar postion:absolute work */
+.headerBotRow
+{
+    position: relative;
+}
+
+/* applies a row flex on the navigation items */
+.navHeader
+{
+    margin-top: -2.8rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 5.5rem;
+}
+
+.navItem
+{
+    color: #161445;
+    margin: 0.6rem;
+    font-size: 0.95rem;
+    transform: scale(1, 0.8);
+    font-family: 'Gothic A1', sans-serif;
+    align-self: center;
+}
+
+.navItem:hover
+{
+    color: #e20024;
+    transition: ease 0.5s;
+}
+
+.socialMediaBar
+{
+    position: absolute;
+    right: 6.3rem;
+    bottom: 2.2rem;
+}
+
+.socialMediaIcon
+{
+    margin-left: 1.1rem;
+}
+
+
+
+/*
+ Now comes the footer css
+*/
+
+footer
+{
+    margin-top: auto;
+    background-color: #161445;
+    border-top: solid 3px #e20024;
+    padding-left: 18%;
+    padding-right: 17%;
+    padding-bottom: 2.8rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footerLogoColumn
+{
+    padding: 0.35rem;
+    height: 7.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footerLogo1
+{
+    width: 216px;
+}
+
+.footerLogo2
+{
+    width: 205px;
+}
+
+.footerRow
+{
+    width: 45rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.footerNav
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 4rem;
+}
+
+.footerNavItem
+{
+    color: white;
+    margin-left: 2.3rem;
+    text-decoration: underline 1px;
+}
+
+.footerCopyContainer
+{
+    height: 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.copyrightLine
+{
+    color: white;
+}
+
+.copyrightLine::before, .cancelUnderline::before
+{
+    content:"\00a9";
+}
+
+.phoneColumn
+{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.red
+{
+    color: #e20024;
+}
+
+.phoneFooterText
+{
+    color: white;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0;
+    letter-spacing: 0.05rem;
+}
+
+.cancelUnderline
+{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1151px)
+{
+    footer
+    {
+        padding-right: 14%;
+        padding-left: 14%;
+    }
+
+    .footerNavItem, .copyrightLine
+    {
+        font-size: 0.8rem;
+    }
+
+    .socialMediaBar
+    {
+        right: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1051px)
+{
+    .navHeader
+    {
+        margin-top: -2rem;
+    }
+    
+    footer
+    {
+        padding-right: 11%;
+        padding-left: 11%;
+    }
+    
+    .headerLogo
+    {
+        width: 500px;
+    }
+
+    .loginAndCart
+    {
+        right: 1.5rem;
+    }
+
+    .navHeader
+    {
+        height: 4rem;
+    }
+
+    .navItem
+    {
+        font-size: 0.68rem;
+    }
+}
+
+@media only screen and (max-width: 951px)
+{
+    .navHeader
+    {
+        margin-top: -1.5rem;
+    }
+    
+    .navItem
+    {
+        align-self: flex-start;
+        font-size: 0.55rem;
+    }
+
+    .navHeader
+    {
+        height: 3rem;
+    }
+
+    .headerLogo
+    {
+        width: 400px;
+    }
+
+    .loginAndCart
+    {
+        width: 8rem;
+    }
+
+    .pLogin
+    {
+        font-size: 0.8rem;
+    }
+
+    footer
+    {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    .socialMediaBar
+    {
+        right: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 801px)
+{
+    .navHeader
+    {
+        margin-top: -1rem;
+    }
+    
+    footer
+    {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .footerNavItem, .copyrightLine
+    {
+        font-size: 0.7rem;
+    }
+
+    .footerLogo1
+    {
+        width: 174px;
+    }
+    
+    .footerLogo2
+    {
+        width: 165px;
+    }
+
+    .navItem
+    {
+        font-size: 0.45rem;
+        letter-spacing: 0rem;
+    }
+
+    .headerLogo
+    {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 601px)
+{
+    .footerLogo1
+    {
+        width: 237px;
+    }
+    
+    .footerLogo2
+    {
+        width: 225px;
+    }
+
+    .navHeader
+    {
+        margin-top: 0.4rem;
+    }
+
+    footer
+    {
+        padding-bottom: 0.5rem;
+    }
+
+    .socialMediaBar
+    {
+        right: 45%;
+        top: -0.8rem;
+    }
+
+    .pLogin
+    {
+        display: none;
+    }
+
+    .loginAndCart
+    {
+        width: fit-content;
+        top: 2.5rem;
+    }
+
+    .footerNavItem
+    {
+        margin: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .footerNav
+    {
+        height: fit-content;
+    }
+
+    .footerCopyContainer
+    {
+        height: fit-content;
+    }
+
+    .copyrightLine
+    {
+        margin: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .footerRow
+    {
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .navHeader
+    {
+        margin-top: 0.4rem;
+    }
+
+    .navItem
+    {
+        font-size: 0.2px;
+    }
+    
+    .headerLogo
+    {
+        width: 250px;
+    }
+
+    .navItem
+    {
+        font-size: 0.35rem;
+    }
+
+    .loginAndCart
+    {
+        right: 0.5rem;
+    }
+
+    footer
+    {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+    .copyrightLine
+    {
+        font-size: 0.5rem;
+    }
+
+    .footerNavItem
+    {
+        font-size: 0.5rem;
+    }
+
+    .footerLogoColumn
+    {
+        height: 4rem;
+    }
+}
+
+@media only screen and (max-width: 460px)
+{
+    .copyrightLine
+    {
+        margin: 0.25rem;
+        font-size: 0.6rem;
+    }
+
+    .footerNavItem
+    {
+        margin: 0.25rem
+    }
+
+    .navItem
+    {
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    .navHeader
+    {
+        margin-top: 0.6rem;
+    }
+
+    .navItem
+    {
+        margin: 0.3rem;
+    }
+}
+

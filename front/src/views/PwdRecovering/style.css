@@ -1,0 +1,12 @@
+/* Style view récupération de mot de passe */
+#recoveringPwdMainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#recoveringMailInput{
+    display: flex;
+    flex-direction: column;
+}

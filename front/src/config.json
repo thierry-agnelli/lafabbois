@@ -1,0 +1,5 @@
+{
+    "_API_URL": "http://localhost:3001",
+    "API_URL": "https://lafabbois-back.osc-fr1.scalingo.io",
+    "stripePublicKey": "pk_test_51JEwKQGznPLZznQyvjoxhReZKxeGPiO3rj3cQH8ozJggCqR3h6HOjJ3a2blfs2hf2PCNOeYAHtQM2sRDMIbTEsrx00XaMz7Z7B"
+}

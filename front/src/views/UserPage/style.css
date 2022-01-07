@@ -1,0 +1,48 @@
+#userPageContainer{
+    padding: 2.5em;
+}
+
+
+#profileContainer{
+    border: 2px solid #E20024;
+    background-color: #151e47;
+    color: white;
+    border-radius: 0.5em;
+    margin: 1em 0;
+    padding: 1em;
+    min-width: 35em;
+}
+
+.profileItem{
+    margin: 0.5em;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+.profileItemLabel{
+    flex-basis: 15em;
+    min-width: 15em;
+    font-weight: bold;
+}
+
+.profileItemInfo{
+    flex-basis: 15em;
+    /* overflow: hidden; */
+}
+
+.updateUserInfoBtn{
+    background-color: white;
+    border: 2px solid #E20024;
+    border-radius: 0.5em;;
+    margin-right: 0.2em;
+    color: #E20024;
+    height: 2.5em;
+}
+
+.updateUserInfoBtn:hover{
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #E20024;
+    color: white;
+}

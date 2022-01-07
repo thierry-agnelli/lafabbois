@@ -1,0 +1,116 @@
+#orderAddressContainer{   
+    border-top: 1px solid #E20024;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
+    color: #161445;
+}
+
+#addressTitle{
+    margin: 1.25em 0;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#connectionBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 30vw;
+    max-width: 30em;
+    min-width: 10em;
+    font-size: 1.2rem;
+    background: #EAECEE;
+}
+
+.radioForm{
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox
+{
+    text-align: center;
+}
+
+.addressForm
+{
+    color: #566573;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.addressForm label {
+    margin: 1.5em 0 0.5em 0;
+}
+
+
+.link:hover{
+    transition: 0.25s;
+    color: #A0A0A0;
+}
+
+.submitAddressButton
+{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin: 1rem;
+    padding: 0.5rem;
+    align-self: center;
+    background-color: white;
+    text-align: center;
+    border: 2px solid #E20024;
+    text-decoration:none;
+    text-align: center;
+}
+
+.addressBtnIcon{
+    margin-right: 0.2em;
+    color: #E20024; 
+}
+
+.submitAddressButton:hover{
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #E20024;
+    color: white;
+}
+
+.submitAddressButton:hover .addressBtnIcon{
+    color: white;
+    transition: 0.3s ease;
+}
+
+.checkboxAddress
+{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.inputForm
+{
+    height:2rem;
+    width:20rem;
+    font-size: 1.2rem;
+}
+
+.selectAddress{
+    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 40em;
+}
+
+.selectAddress:focus{
+    outline: 0;
+}
+
+#selectShipping
+{
+    margin-top: 30px;
+}

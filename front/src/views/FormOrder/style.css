@@ -1,0 +1,189 @@
+.form
+{
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.formChild
+{
+    width: 60%;
+}
+
+.formTitle
+{
+    margin: 0;
+    padding-bottom: 0.5em;
+    color: #151e47;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #E20024;
+}
+
+.dimensionsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.dimensionItem{
+    margin: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.dimensionIcon{
+    color: #e20024;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+}
+
+.dimensionItem label{
+    margin: 0 0.3em;
+    width: 7.5em;
+}
+
+.dimensionInput{
+    width: 12em;
+    padding: 0.1em;
+    border: 1px solid black;
+}
+
+.veneerBtnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.veneerFormBtn{
+    width: 12em;
+}
+
+.flexContainer
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.elementsCard
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+}
+
+.elementsImage
+{
+    cursor: pointer;
+    align-self: center;
+    width: 350px;
+    height: 350px;
+    border: 2px solid white;
+    padding: 1em;
+    transition: border-color 0.15s;
+}
+
+.elementsImage:hover{
+    border: 2px solid #E20024;
+    transition: border-color 0.5s;
+}
+
+.veneerImage{
+    width: 200px;
+    height: 200px;
+}
+
+#formOrderBtnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.formOrderBtn{
+    font-size: 1rem;
+    border-radius: 4px;
+    margin: 1rem;
+    padding: 0.5rem;
+    align-self: center;
+    background-color: white;
+    text-align: center;
+    border: 2px solid #E20024;
+    text-decoration:none;
+    text-align: center;
+}
+
+.formOrderBtn:hover{
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #E20024;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 1rem;
+}
+
+li label{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.elementsDescription{
+    align-self: center;
+    margin: 0.5rem;
+}
+
+.veneer{
+    width: 9em;
+}
+
+.validationPageBtn{
+    width: 12em;
+}
+
+#validationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#validationContainer h2{
+    font-size: 2em;
+}
+
+#resumeCurrentProduct{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5em;
+    color: white;
+    background-color: #151e47;
+    border-radius: 1.5em;
+    border: 3px solid #E20024;
+}
+
+#resumeCurrentProduct #currentProduct{
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#resumeCurrentProduct .details{
+    font-size: 0.8em;
+    margin: 0.1em 1em;
+}
+
+#resumeCurrentProduct #currentProductPrice{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0em 0em 0.2em 0.8em;
+}

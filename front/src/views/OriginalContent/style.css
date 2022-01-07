@@ -1,0 +1,16 @@
+#originalContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#originalContentContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#originalContentContainer div .link{
+    margin: 0.5em;
+    text-decoration: underline;
+}

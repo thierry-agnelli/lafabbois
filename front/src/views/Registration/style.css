@@ -1,0 +1,95 @@
+#mainRegistrationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.title{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#mainRegistrationContainer label{
+    margin-top: 1em;
+}
+
+.registrationTextinput{
+    width: 20em;
+    height: 2em;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#registrationMainFormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.registrationPartContainer{
+    margin-top: 1.5em;
+}
+
+.headerPartLabel{
+    font-weight: bold;
+}
+
+#shippingAddressCheckBox{
+    margin-bottom: 0.75em;
+}
+
+.registrationFormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+#billingCompanyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.companyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#registrationBtn{
+    cursor: pointer;
+    margin: 1em 0;
+    width: 13em;
+    padding: 0.5em 0em;
+    font-size: 1em;
+    background-color: #00000000;
+    border: 2px solid #E20024;
+    border-radius: 2px;
+    transition: color 0.25s;
+}
+
+#registrationBtn:hover{
+    color: #808080;
+    transition: color 0.25s;
+}
+
+#registratedUserContainer{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Erreur d'infos */
+.inputFormError{
+    background-color: #F4D7D7;
+}
+
+.registrationError{
+    color: red;
+    height: 1em;
+}
